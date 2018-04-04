@@ -26,7 +26,7 @@ public:
 	Texture();
 	virtual ~Texture();
 
-	void LoadFromFile(std::string filename, TextureFormat format, WrapMode wrap, bool compress=false);
+	void LoadFromFile(std::string filename, TextureFormat format, WrapMode wrap, bool compress=true);
 	void Init(TextureFormat format, WrapMode wrap, unsigned int width, unsigned int height, bool compress=false, void *data=NULL);
 	int getTexture(){
 		return _texture;
