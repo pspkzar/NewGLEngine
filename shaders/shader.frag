@@ -80,7 +80,7 @@ void main()
 
     float intensity = max(0.f,dot(n,l));
 
-    vFragColor = vec4(res*intensity,1)*M_PI;
+    vFragColor = vec4(res*intensity,1)*M_PI+0.2*vec4(diffuse-F0);
     //vFragColor =vec4(alpha);
     //vFragColor = vec4(max(0.f, F*D*G/(4*dot(n,l)*dot(n,v)))*intensity);
 }
